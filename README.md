@@ -1,4 +1,4 @@
-# LSCP: Learn by Surprise, Commit by Proof
+# Learn by Surprise, Commit by Proof
 
 A self-gated post-training framework for autonomous knowledge acquisition in language models.
 
