@@ -4,7 +4,7 @@ A self-gated post-training framework for autonomous knowledge acquisition in lan
 
 LSCP enables language models to *learn from what they read*—selectively, verifiably, and without external supervision. It detects what a model does not already know (via surprisal), verifies new content against existing knowledge (via self-generated Q&A chains), and commits verified knowledge to parametric weights at a strength proportional to conviction depth (via per-item β₂ adjustment of AdamW).
 
-**Paper**: [Learn by Surprise, Commit by Proof](https://arxiv.org/abs/XXXX.XXXXX)
+**Paper**: [Learn by Surprise, Commit by Proof](https://arxiv.org/abs/2604.01951)
 
 ## How It Works
 
@@ -104,10 +104,6 @@ Stage 3 produces `stage3_results_r{R}.json` containing:
 - Perturbation gap (paraphrase PPL / original PPL)
 - Five-way Q&A accuracy (novel-direct, novel-adjacent, corrupt-direct, corrupt-adjacent, unrelated)
 - Training metadata (items, time, loss curves)
-
-## Terminology
-
-The code uses `"aligned"` internally for passage labels (historical convention). The paper uses **"known"** for this category. Display output shows "Known".
 
 ## Citation
 
